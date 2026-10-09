@@ -448,12 +448,28 @@
     });
   }
 
+  /* flecha para volver arriba */
+  function initToTop() {
+    var b = $("#toTop"); if (!b) return;
+    var ticking = false;
+    function update() {
+      ticking = false;
+      var on = window.scrollY > 480;
+      if (on) b.hidden = false;
+      b.classList.toggle("show", on);
+      if (!on) setTimeout(function () { if (!b.classList.contains("show")) b.hidden = true; }, 260);
+    }
+    window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    b.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }); });
+    update();
+  }
+
   function init() {
     state.lang = pickLang();
     if (window.__SHARED__) $$("[data-cv]").forEach(function (n) { n.remove(); });   // versión compartida: sin descarga de CV
     applyTheme(store(STORE.theme));
     renderAll();
-    initCarousel(); initPhotos(); initBackground(); initCopy();
+    initCarousel(); initPhotos(); initBackground(); initCopy(); initToTop();
 
     $$("#langSwitch button").forEach(function (b) { b.addEventListener("click", function () { setLang(b.dataset.lang); }); });
     $("#themeBtn").addEventListener("click", function () { var n = currentIsDark() ? "light" : "dark"; applyTheme(n); store(STORE.theme, n); });
