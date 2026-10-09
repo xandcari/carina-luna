@@ -496,7 +496,7 @@
     state.lang = pickLang();
     if (window.__SHARED__) $$("[data-cv]").forEach(function (n) { n.remove(); });   // versión compartida: sin descarga de CV
     renderAll();
-    applyTheme(store(STORE.theme));
+    applyTheme(store(STORE.theme) || "dark");   // la primera vez abre en oscuro
     initCarousel(); initPhotos(); initBackground(); initCopy(); initToTop();
 
     $$("#langSwitch button").forEach(function (b) { b.addEventListener("click", function () { setLang(b.dataset.lang); }); });
