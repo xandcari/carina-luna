@@ -360,8 +360,18 @@
     var h = location.hash.replace(/^#\/?/, "");
     return VIEWS.indexOf(h) > -1 ? h : "about";   // sin enlace a una sección, el sitio abre en Perfil
   }
+  /* cada dos cambios de pestaña, el tema pasa al siguiente (con transición suave de colores) */
+  var tabChanges = 0;
+  function autoTheme() {
+    var root = document.documentElement;
+    if (!reduceMotion) { root.classList.add("theme-fade"); setTimeout(function () { root.classList.remove("theme-fade"); }, 700); }
+    nextTheme();
+  }
+
   function showView(v, first) {
+    var prev = state.view;
     state.view = v;
+    if (!first && v !== prev) { tabChanges++; if (tabChanges % 2 === 0) autoTheme(); }
     $$(".view").forEach(function (s) {
       var on = s.dataset.view === v;
       s.hidden = !on; s.classList.toggle("active", on);

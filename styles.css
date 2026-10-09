@@ -502,3 +502,8 @@ h1 { font-size: clamp(2.3rem, 5.6vw, 3.9rem); line-height: 1.05; font-weight: 80
   .app:not(.expanded) .rail:focus-within .rail-link::after { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .rail { transition: none; } }
+
+/* transición suave cuando el tema cambia solo */
+.theme-fade, .theme-fade *, .theme-fade *::before, .theme-fade *::after {
+  transition: background-color .5s ease, color .5s ease, border-color .5s ease, box-shadow .5s ease, fill .5s ease !important;
+}
