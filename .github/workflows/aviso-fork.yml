@@ -1,0 +1,18 @@
+name: Aviso de fork
+on:
+  fork:
+permissions:
+  issues: write
+jobs:
+  aviso:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Abrir un aviso (issue)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORK_NAME: ${{ github.event.forkee.full_name }}
+          FORK_URL: ${{ github.event.forkee.html_url }}
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "Alguien hizo un fork: $FORK_NAME" \
+            --body "Se creo una copia del repositorio.\n\nCopia: $FORK_URL\nFecha (UTC): $(date -u +%Y-%m-%d\ %H:%M)"

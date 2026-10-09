@@ -8,7 +8,7 @@ window.T.es.privacy = {
   link: "Privacidad",
   title: "Política de privacidad",
   updated: "Última actualización: 9 de octubre de 2026",
-  intro: "En una línea: este sitio no recopila datos personales de quienes lo visitan. No usa cookies, no mide visitas, no muestra publicidad, no tiene formularios ni registro y no le pide nada a servidores de terceros.",
+  intro: "En una línea: este sitio no recopila datos personales de quienes lo visitan. No usa cookies, no mide visitas, no muestra publicidad, no tiene formularios ni registro y no le pide nada a servidores de terceros, salvo el aviso de copias no autorizadas (punto 13).",
   sections: [
     { h: "1. Quién es responsable", p: ["Carina Alejandra Luna, Gral. San Martín, provincia de Buenos Aires, Argentina. Contacto para cualquier consulta o pedido sobre esta política: caricariluna@gmail.com."] },
     { h: "2. Lo que este sitio no hace", p: ["Para que no queden dudas, este sitio no usa:"], ul: [
@@ -36,7 +36,8 @@ window.T.es.privacy = {
     ] },
     { h: "10. Seguridad", p: ["El sitio es estático: no tiene base de datos, servidor propio ni sistema de usuarios, y se entrega por conexión cifrada (HTTPS). Como no recopila datos, no hay datos de visitantes que puedan filtrarse desde el sitio."] },
     { h: "11. Buscadores", p: ["El sitio pide no ser indexado por los buscadores. Es una página para compartir por enlace, no para ser encontrada."] },
-    { h: "12. Cambios en esta política", p: ["Si el sitio cambia de manera que afecte tus datos, actualizo esta política y la fecha de arriba antes de que el cambio entre en vigencia."] }
+    { h: "12. Cambios en esta política", p: ["Si el sitio cambia de manera que afecte tus datos, actualizo esta política y la fecha de arriba antes de que el cambio entre en vigencia."] },
+    { h: "13. Aviso de copias no autorizadas", p: ["Si alguien copia este sitio y lo publica en otra dirección, el sitio detecta que no se está abriendo desde su dirección oficial. Solo en ese caso envía a un servicio de notificaciones (ntfy.sh) la dirección de la copia y la hora, para avisarme, y muestra un aviso dentro de la copia. No se envía ningún dato de quien la visita. En la dirección oficial este mecanismo no hace nada."] }
   ]
 };
 
@@ -44,7 +45,7 @@ window.T.en.privacy = {
   link: "Privacy",
   title: "Privacy policy",
   updated: "Last updated: 9 October 2026",
-  intro: "In one line: this site does not collect personal data from its visitors. It uses no cookies, does not measure visits, shows no advertising, has no forms or sign-up, and does not request anything from third-party servers.",
+  intro: "In one line: this site does not collect personal data from its visitors. It uses no cookies, does not measure visits, shows no advertising, has no forms or sign-up, and does not request anything from third-party servers, except for the unauthorised-copy alert (section 13).",
   sections: [
     { h: "1. Who is responsible", p: ["Carina Alejandra Luna, Gral. San Martín, Buenos Aires province, Argentina. For any question or request about this policy: caricariluna@gmail.com."] },
     { h: "2. What this site does not do", p: ["To leave no doubt, this site does not use:"], ul: [
@@ -72,7 +73,8 @@ window.T.en.privacy = {
     ] },
     { h: "10. Security", p: ["The site is static: it has no database, no server of its own and no user system, and it is delivered over an encrypted connection (HTTPS). Because it collects no data, there is no visitor data that could leak from the site."] },
     { h: "11. Search engines", p: ["The site asks not to be indexed by search engines. It is a page to be shared by link, not to be found."] },
-    { h: "12. Changes to this policy", p: ["If the site changes in a way that affects your data, I will update this policy and the date above before the change takes effect."] }
+    { h: "12. Changes to this policy", p: ["If the site changes in a way that affects your data, I will update this policy and the date above before the change takes effect."] },
+    { h: "13. Alert for unauthorised copies", p: ["If someone copies this site and publishes it at another address, the site detects that it is not being opened from its official address. Only in that case does it send the address of the copy and the time to a notification service (ntfy.sh), to alert me, and it shows a notice inside the copy. No data about the visitor is sent. At the official address this mechanism does nothing."] }
   ]
 };
 
@@ -80,7 +82,7 @@ window.T.fr.privacy = {
   link: "Confidentialité",
   title: "Politique de confidentialité",
   updated: "Dernière mise à jour : 9 octobre 2026",
-  intro: "En une ligne : ce site ne collecte aucune donnée personnelle de ses visiteurs. Il n'utilise pas de cookies, ne mesure pas les visites, n'affiche pas de publicité, n'a ni formulaire ni inscription et ne sollicite aucun serveur tiers.",
+  intro: "En une ligne : ce site ne collecte aucune donnée personnelle de ses visiteurs. Il n'utilise pas de cookies, ne mesure pas les visites, n'affiche pas de publicité, n'a ni formulaire ni inscription et ne sollicite aucun serveur tiers, sauf l'alerte de copie non autorisée (point 13).",
   sections: [
     { h: "1. Responsable", p: ["Carina Alejandra Luna, Gral. San Martín, province de Buenos Aires, Argentine. Pour toute question ou demande concernant cette politique : caricariluna@gmail.com."] },
     { h: "2. Ce que ce site ne fait pas", p: ["Pour lever tout doute, ce site n'utilise pas :"], ul: [
@@ -108,7 +110,8 @@ window.T.fr.privacy = {
     ] },
     { h: "10. Sécurité", p: ["Le site est statique : il n'a ni base de données, ni serveur propre, ni système d'utilisateurs, et il est transmis par connexion chiffrée (HTTPS). Comme il ne collecte aucune donnée, aucune donnée de visiteur ne peut fuiter depuis le site."] },
     { h: "11. Moteurs de recherche", p: ["Le site demande à ne pas être indexé par les moteurs de recherche. C'est une page à partager par lien, non à trouver."] },
-    { h: "12. Modifications de cette politique", p: ["Si le site évolue d'une manière qui affecte vos données, je mettrai à jour cette politique et la date ci-dessus avant l'entrée en vigueur du changement."] }
+    { h: "12. Modifications de cette politique", p: ["Si le site évolue d'une manière qui affecte vos données, je mettrai à jour cette politique et la date ci-dessus avant l'entrée en vigueur du changement."] },
+    { h: "13. Alerte de copie non autorisée", p: ["Si quelqu'un copie ce site et le publie à une autre adresse, le site détecte qu'il n'est pas ouvert depuis son adresse officielle. Dans ce seul cas, il envoie à un service de notifications (ntfy.sh) l'adresse de la copie et l'heure, pour m'avertir, et il affiche un avertissement dans la copie. Aucune donnée sur le visiteur n'est envoyée. À l'adresse officielle, ce mécanisme ne fait rien."] }
   ]
 };
 
@@ -116,7 +119,7 @@ window.T.de.privacy = {
   link: "Datenschutz",
   title: "Datenschutzerklärung",
   updated: "Zuletzt aktualisiert: 9. Oktober 2026",
-  intro: "In einem Satz: Diese Website erhebt keine personenbezogenen Daten ihrer Besucher. Sie verwendet keine Cookies, misst keine Besuche, zeigt keine Werbung, hat weder Formulare noch Registrierung und fordert nichts von Servern Dritter an.",
+  intro: "In einem Satz: Diese Website erhebt keine personenbezogenen Daten ihrer Besucher. Sie verwendet keine Cookies, misst keine Besuche, zeigt keine Werbung, hat weder Formulare noch Registrierung und fordert nichts von Servern Dritter an, außer der Warnung vor nicht autorisierten Kopien (Punkt 13).",
   sections: [
     { h: "1. Verantwortliche", p: ["Carina Alejandra Luna, Gral. San Martín, Provinz Buenos Aires, Argentinien. Für Fragen oder Anliegen zu dieser Erklärung: caricariluna@gmail.com."] },
     { h: "2. Was diese Website nicht tut", p: ["Damit keine Zweifel bleiben, verwendet diese Website nicht:"], ul: [
@@ -144,6 +147,7 @@ window.T.de.privacy = {
     ] },
     { h: "10. Sicherheit", p: ["Die Website ist statisch: Sie hat keine Datenbank, keinen eigenen Server und kein Benutzersystem und wird über eine verschlüsselte Verbindung (HTTPS) ausgeliefert. Da sie keine Daten erhebt, können über die Website auch keine Besucherdaten abfließen."] },
     { h: "11. Suchmaschinen", p: ["Die Website bittet darum, nicht von Suchmaschinen indexiert zu werden. Sie ist eine Seite, die per Link geteilt wird, nicht eine, die gefunden werden soll."] },
-    { h: "12. Änderungen dieser Erklärung", p: ["Wenn sich die Website so ändert, dass Ihre Daten betroffen sind, aktualisiere ich diese Erklärung und das obige Datum, bevor die Änderung wirksam wird."] }
+    { h: "12. Änderungen dieser Erklärung", p: ["Wenn sich die Website so ändert, dass Ihre Daten betroffen sind, aktualisiere ich diese Erklärung und das obige Datum, bevor die Änderung wirksam wird."] },
+    { h: "13. Warnung vor nicht autorisierten Kopien", p: ["Wenn jemand diese Website kopiert und unter einer anderen Adresse veröffentlicht, erkennt die Website, dass sie nicht von ihrer offiziellen Adresse aus geöffnet wird. Nur in diesem Fall sendet sie die Adresse der Kopie und die Uhrzeit an einen Benachrichtigungsdienst (ntfy.sh), um mich zu warnen, und zeigt innerhalb der Kopie einen Hinweis an. Es werden keine Daten über die besuchende Person gesendet. Unter der offiziellen Adresse tut dieser Mechanismus nichts."] }
   ]
 };
