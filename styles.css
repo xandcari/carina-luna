@@ -489,17 +489,17 @@ h1 { font-size: clamp(2.3rem, 5.6vw, 3.9rem); line-height: 1.05; font-weight: 80
 .rail { width: var(--rail-w); transition: width .25s cubic-bezier(.2, .7, .2, 1), box-shadow .25s ease; }
 @media (hover: hover) and (min-width: 861px) {
   .app:not(.expanded) .rail:hover,
-  .app:not(.expanded) .rail:focus-within { width: 248px; box-shadow: 10px 0 36px rgba(15, 37, 64, .18); }
+  .app:not(.expanded) .rail:has(:focus-visible) { width: 248px; box-shadow: 10px 0 36px rgba(15, 37, 64, .18); }
   .app:not(.expanded) .rail:hover .rl-label,
-  .app:not(.expanded) .rail:focus-within .rl-label { opacity: 1; width: auto; }
+  .app:not(.expanded) .rail:has(:focus-visible) .rl-label { opacity: 1; width: auto; }
   .app:not(.expanded) .rail:hover .rail-brand,
-  .app:not(.expanded) .rail:focus-within .rail-brand { display: flex; }
+  .app:not(.expanded) .rail:has(:focus-visible) .rail-brand { display: flex; }
   .app:not(.expanded) .rail:hover .lang,
-  .app:not(.expanded) .rail:focus-within .lang { flex-direction: row; justify-content: space-between; }
+  .app:not(.expanded) .rail:has(:focus-visible) .lang { flex-direction: row; justify-content: space-between; }
   .app:not(.expanded) .rail:hover .rail-avatar,
-  .app:not(.expanded) .rail:focus-within .rail-avatar { align-self: flex-start; margin-left: .35rem; }
+  .app:not(.expanded) .rail:has(:focus-visible) .rail-avatar { align-self: flex-start; margin-left: .35rem; }
   .app:not(.expanded) .rail:hover .rail-link::after,
-  .app:not(.expanded) .rail:focus-within .rail-link::after { display: none; }
+  .app:not(.expanded) .rail:has(:focus-visible) .rail-link::after { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .rail { transition: none; } }
 
@@ -521,3 +521,9 @@ h1 { font-size: clamp(2.3rem, 5.6vw, 3.9rem); line-height: 1.05; font-weight: 80
 .ai-card:nth-child(3n+2) { border-top-color: var(--navy); }
 .ai-card:nth-child(3n) { border-top-color: var(--lime); }
 :root[data-theme="dark"] .ai-card:nth-child(3n+2) { border-top-color: var(--teal); }
+
+/* en escritorio la barra se abre sola al pasar el cursor: el botón de las tres rayas solo se usa en celular */
+@media (hover: hover) and (min-width: 861px) {
+  #railToggle { display: none; }
+  .rail-top { min-height: 48px; padding-left: .45rem; }
+}

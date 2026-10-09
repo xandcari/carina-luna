@@ -391,7 +391,6 @@
   function setRail(expanded) {
     $("#app").classList.toggle("expanded", expanded);
     $("#railToggle").setAttribute("aria-expanded", String(expanded));
-    store(STORE.rail, expanded ? "1" : "0");
   }
   function openDrawer() { $("#app").classList.add("drawer"); $("#scrim").hidden = false; }
   function closeDrawer() { $("#app").classList.remove("drawer"); $("#scrim").hidden = true; }
@@ -559,7 +558,6 @@
     $("#scrim").addEventListener("click", closeDrawer);
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeDrawer(); });
 
-    if (store(STORE.rail) === "1" && innerWidth > 860) setRail(true);
     window.addEventListener("hashchange", function () { showView(currentView()); });
     showView(currentView(), true);
     if (state.view === "home") countUp();
