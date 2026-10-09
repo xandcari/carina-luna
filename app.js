@@ -357,7 +357,7 @@
   /* ── ruteo por vistas ───────────────────────────────────── */
   function currentView() {
     var h = location.hash.replace(/^#\/?/, "");
-    return VIEWS.indexOf(h) > -1 ? h : "home";
+    return VIEWS.indexOf(h) > -1 ? h : "about";   // sin enlace a una sección, el sitio abre en Perfil
   }
   function showView(v, first) {
     state.view = v;
