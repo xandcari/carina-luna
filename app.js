@@ -489,8 +489,11 @@
 
   function renderAll() {
     renderStatic();
-    renderTilesNav(); renderStats(); renderAbout(); renderSkills(); renderExperience(); renderEducation();
-    renderProjects(); renderCommTabs(); renderPhotos(); renderCommunities(); renderGallery(); renderNext(); renderLinks(); renderPrivacy(); renderSkillsTab();
+    // cada parte se dibuja por separado: si una falla (por ejemplo, un archivo que no cargó), el resto sigue funcionando
+    [renderTilesNav, renderStats, renderAbout, renderSkills, renderExperience, renderEducation, renderProjects, renderCommTabs,
+     renderPhotos, renderCommunities, renderGallery, renderNext, renderLinks, renderPrivacy, renderSkillsTab].forEach(function (fn) {
+      try { fn(); } catch (e) { if (window.console) console.warn("No se pudo dibujar " + (fn.name || "una parte") + ":", e); }
+    });
     observeReveal();
   }
 
