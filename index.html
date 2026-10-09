@@ -69,12 +69,10 @@
           <button type="button" data-lang="fr" aria-pressed="false">FR</button>
           <button type="button" data-lang="de" aria-pressed="false">DE</button>
         </div>
-        <div class="themes" role="group" id="themeSwitch" aria-label="Tema" data-i18n-attr="aria-label:ui.theme">
-          <button type="button" class="sw sw-light" data-theme-opt="light" aria-pressed="false"></button>
-          <button type="button" class="sw sw-dark" data-theme-opt="dark" aria-pressed="false"></button>
-          <button type="button" class="sw sw-rose" data-theme-opt="rose" aria-pressed="false"></button>
-          <button type="button" class="sw sw-cream" data-theme-opt="cream" aria-pressed="false"></button>
-        </div>
+        <button type="button" class="rail-link rail-theme" id="themeBtn" aria-label="Cambiar tema">
+          <span class="sw sw-light" id="themeDot" aria-hidden="true"></span>
+          <span class="rl-label" id="themeLabel">Tema</span>
+        </button>
         <a class="rail-avatar" href="#about" aria-label="Carina Alejandra Luna"><img src="assets/perfil.jpg" alt="" width="44" height="44"></a>
       </div>
     </aside>

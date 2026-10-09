@@ -386,24 +386,29 @@
   function openDrawer() { $("#app").classList.add("drawer"); $("#scrim").hidden = false; }
   function closeDrawer() { $("#app").classList.remove("drawer"); $("#scrim").hidden = true; }
 
-  var THEMES = ["light", "dark", "rose", "cream"];
+  var THEMES = ["light", "dark", "rose", "cream"];   // el botón recorre los temas en este orden
   function activeTheme() {
     var m = document.documentElement.getAttribute("data-theme");
     if (THEMES.indexOf(m) > -1) return m;
     return matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   }
   function syncThemes() {
-    var cur = activeTheme();
-    $$("#themeSwitch .sw").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.themeOpt === cur)); });
+    var cur = activeTheme(), names = t().ui.themeNames || {}, name = names[cur] || cur;
+    var dot = $("#themeDot"), label = $("#themeLabel"), btn = $("#themeBtn");
+    if (!btn) return;
+    dot.className = "sw sw-" + cur;
+    label.textContent = t().ui.theme + ": " + name;
+    btn.setAttribute("aria-label", t().ui.theme + ": " + name);
+    btn.setAttribute("data-tip", name);
   }
-  function labelThemes() {
-    var names = t().ui.themeNames || {};
-    $("#themeSwitch").setAttribute("aria-label", t().ui.theme);
-    $$("#themeSwitch .sw").forEach(function (b) { var n = names[b.dataset.themeOpt] || b.dataset.themeOpt; b.setAttribute("aria-label", n); b.setAttribute("title", n); });
-  }
+  function labelThemes() { syncThemes(); }
   function applyTheme(mode) {
     document.documentElement.setAttribute("data-theme", THEMES.indexOf(mode) > -1 ? mode : "auto");
     syncThemes();
+  }
+  function nextTheme() {
+    var next = THEMES[(THEMES.indexOf(activeTheme()) + 1) % THEMES.length];
+    applyTheme(next); store(STORE.theme, next);
   }
 
   /* ── política de privacidad ─────────────────────────────── */
@@ -485,7 +490,7 @@
     initCarousel(); initPhotos(); initBackground(); initCopy(); initToTop();
 
     $$("#langSwitch button").forEach(function (b) { b.addEventListener("click", function () { setLang(b.dataset.lang); }); });
-    $$("#themeSwitch .sw").forEach(function (b) { b.addEventListener("click", function () { applyTheme(b.dataset.themeOpt); store(STORE.theme, b.dataset.themeOpt); }); });
+    $("#themeBtn").addEventListener("click", nextTheme);
     matchMedia("(prefers-color-scheme: dark)").addEventListener("change", syncThemes);
     $("#railToggle").addEventListener("click", function () { setRail(!$("#app").classList.contains("expanded")); });
     $("#railOpen").addEventListener("click", openDrawer);

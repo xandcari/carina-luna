@@ -479,3 +479,8 @@ h1 { font-size: clamp(2.3rem, 5.6vw, 3.9rem); line-height: 1.05; font-weight: 80
 .sw-dark { background: linear-gradient(135deg, #0A1424 50%, #C9E86B 50%); }
 .sw-rose { background: linear-gradient(135deg, #FFF1F5 50%, #F28DB0 50%); }
 .sw-cream { background: linear-gradient(135deg, #FBF5E6 50%, #C9A86A 50%); }
+
+/* botón único que recorre los temas */
+.rail-theme .sw { flex: none; margin: 0 -2px; cursor: inherit; }
+.rail-theme:hover .sw { transform: scale(1.12); }
+.rail-theme .sw[class] { box-shadow: 0 0 0 2px var(--ink); }
