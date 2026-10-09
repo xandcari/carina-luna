@@ -3,9 +3,9 @@
 
   var LANGS = ["es", "en", "fr", "de"];
   var LOCALE = { es: "es-AR", en: "en-GB", fr: "fr-FR", de: "de-DE" };
-  var VIEWS = ["home", "about", "experience", "projects", "community", "next", "contact", "privacy"];
+  var VIEWS = ["home", "about", "skills", "experience", "projects", "community", "next", "contact", "privacy"];
   var STORE = { lang: "cl-lang", theme: "cl-theme", rail: "cl-rail" };
-  var state = { lang: "es", view: "home", filter: "all", commFilter: "all", album: "all", tab: "photos" };
+  var state = { lang: "es", view: "home", filter: "all", commFilter: "all", album: "all", tab: "photos", skillTab: "linkedin" };
 
   /* ── utilidades ─────────────────────────────────────────── */
   function store(key, val) {
@@ -421,6 +421,58 @@
     applyTheme(next); store(STORE.theme, next);
   }
 
+  /* ── Habilidades: LinkedIn, competencias del CV e IA ─────── */
+  function renderSkillsTab() {
+    var S = t().skillsTab;
+    $("#skillsTitle").textContent = S.title;
+    $("#skillsIntro").textContent = S.intro;
+    $("#stab-linkedin").textContent = S.tabLinkedin;
+    $("#stab-cv").textContent = S.tabCv;
+    $("#stab-ai").textContent = S.tabAi;
+
+    var box = $("#liGroups"); clear(box);
+    var L = window.DATA.linkedin;
+    L.groups.forEach(function (g) {
+      var pills = g.items.map(function (id) {
+        var kids = [el("span", { text: S.names[id] })];
+        if (L.assessed.indexOf(id) > -1) kids.push(el("span", { class: "pill-badge", title: S.assessed, text: "✓ " + S.assessed }));
+        return el("li", { class: "skill-pill" }, kids);
+      });
+      box.appendChild(el("div", { class: "li-group" }, [el("h3", { text: S.groups[g.id] }), el("ul", { class: "pill-list" }, pills)]));
+    });
+    var link = $("#liLink"); link.textContent = S.viewProfile; link.href = L.url;
+
+    $("#aiIntro").textContent = S.ai.intro;
+    var grid = $("#aiGrid"); clear(grid);
+    Object.keys(S.ai.items).forEach(function (k) {
+      var it = S.ai.items[k];
+      grid.appendChild(el("article", { class: "card ai-card" }, [
+        el("h3", { text: it.h }),
+        el("p", { text: it.p }),
+        el("div", { class: "chips" }, (window.DATA.aiTags[k] || []).map(function (x) { return el("span", { class: "chip", text: x }); }))
+      ]));
+    });
+    setSkillTab(state.skillTab, true);
+  }
+  function setSkillTab(k, quiet) {
+    state.skillTab = k;
+    ["linkedin", "cv", "ai"].forEach(function (n) {
+      $("#stab-" + n).setAttribute("aria-selected", String(n === k));
+      $("#stab-" + n).setAttribute("tabindex", n === k ? "0" : "-1");
+      $("#spanel-" + n).hidden = n !== k;
+    });
+    if (!quiet) observeReveal();
+  }
+  function initSkillTabs() {
+    var tabs = $("#skillTabs"), order = ["linkedin", "cv", "ai"];
+    tabs.addEventListener("click", function (e) { var b = e.target.closest(".tab"); if (b) setSkillTab(b.dataset.tab); });
+    tabs.addEventListener("keydown", function (e) {
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+      var i = order.indexOf(state.skillTab) + (e.key === "ArrowRight" ? 1 : -1);
+      var next = order[(i + order.length) % order.length]; setSkillTab(next); $("#stab-" + next).focus();
+    });
+  }
+
   /* ── política de privacidad ─────────────────────────────── */
   function renderPrivacy() {
     var P = t().privacy;
@@ -438,7 +490,7 @@
   function renderAll() {
     renderStatic();
     renderTilesNav(); renderStats(); renderAbout(); renderSkills(); renderExperience(); renderEducation();
-    renderProjects(); renderCommTabs(); renderPhotos(); renderCommunities(); renderGallery(); renderNext(); renderLinks(); renderPrivacy();
+    renderProjects(); renderCommTabs(); renderPhotos(); renderCommunities(); renderGallery(); renderNext(); renderLinks(); renderPrivacy(); renderSkillsTab();
     observeReveal();
   }
 
@@ -497,7 +549,7 @@
     if (window.__SHARED__) $$("[data-cv]").forEach(function (n) { n.remove(); });   // versión compartida: sin descarga de CV
     renderAll();
     applyTheme(store(STORE.theme) || "dark");   // la primera vez abre en oscuro
-    initCarousel(); initPhotos(); initBackground(); initCopy(); initToTop();
+    initCarousel(); initPhotos(); initSkillTabs(); initBackground(); initCopy(); initToTop();
 
     $$("#langSwitch button").forEach(function (b) { b.addEventListener("click", function () { setLang(b.dataset.lang); }); });
     $("#themeBtn").addEventListener("click", nextTheme);

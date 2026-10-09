@@ -507,3 +507,17 @@ h1 { font-size: clamp(2.3rem, 5.6vw, 3.9rem); line-height: 1.05; font-weight: 80
 .theme-fade, .theme-fade *, .theme-fade *::before, .theme-fade *::after {
   transition: background-color .5s ease, color .5s ease, border-color .5s ease, box-shadow .5s ease, fill .5s ease !important;
 }
+
+/* ═════════ Habilidades ═════════ */
+.li-group + .li-group { margin-top: 1.75rem; }
+.li-group h3 { font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 800; color: var(--teal); margin-bottom: .75rem; }
+.pill-list { display: flex; flex-wrap: wrap; gap: .6rem; }
+.skill-pill { display: inline-flex; align-items: center; flex-wrap: wrap; gap: .5rem; padding: .55rem 1rem; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); font-weight: 700; font-size: .95rem; }
+.pill-badge { font-size: .72rem; font-weight: 800; padding: .15rem .55rem; border-radius: 999px; background: var(--lime-soft); color: var(--ink); border: 1px solid color-mix(in srgb, var(--lime) 60%, var(--line)); }
+.li-cta { margin-top: 2rem; }
+.ai-intro { max-width: 46rem; margin-bottom: 1.5rem; padding: 1rem 1.25rem; border-radius: 16px; background: var(--lime-soft); border: 1px solid color-mix(in srgb, var(--lime) 60%, var(--line)); font-weight: 600; }
+.ai-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.1rem; }
+.ai-card { border-top: 4px solid var(--teal); }
+.ai-card:nth-child(3n+2) { border-top-color: var(--navy); }
+.ai-card:nth-child(3n) { border-top-color: var(--lime); }
+:root[data-theme="dark"] .ai-card:nth-child(3n+2) { border-top-color: var(--teal); }
