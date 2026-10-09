@@ -406,7 +406,8 @@
     var dot = $("#themeDot"), label = $("#themeLabel"), btn = $("#themeBtn");
     if (!btn) return;
     dot.className = "sw sw-" + cur;
-    label.textContent = t().ui.theme + ": " + name;
+    if (label) label.textContent = t().ui.theme + ": " + name;
+    btn.setAttribute("title", name);
     btn.setAttribute("aria-label", t().ui.theme + ": " + name);
     btn.setAttribute("data-tip", name);
   }
@@ -555,6 +556,10 @@
     matchMedia("(prefers-color-scheme: dark)").addEventListener("change", syncThemes);
     $("#railToggle").addEventListener("click", function () { setRail(!$("#app").classList.contains("expanded")); });
     $("#railOpen").addEventListener("click", openDrawer);
+    // en escritorio la barra nunca queda abierta: al sacar el cursor se retrae siempre
+    $("#rail").addEventListener("mouseleave", function () {
+      if (innerWidth > 860 && matchMedia("(any-hover: hover)").matches && $("#app").classList.contains("expanded")) setRail(false);
+    });
     $("#scrim").addEventListener("click", closeDrawer);
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeDrawer(); });
 
