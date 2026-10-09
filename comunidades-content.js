@@ -308,3 +308,7 @@ window.T.es.ui.copy = "Copiar"; window.T.es.ui.copied = "¡Copiado!";
 window.T.en.ui.copy = "Copy"; window.T.en.ui.copied = "Copied!";
 window.T.fr.ui.copy = "Copier"; window.T.fr.ui.copied = "Copié !";
 window.T.de.ui.copy = "Kopieren"; window.T.de.ui.copied = "Kopiert!";
+window.T.es.ui.themeNames = { light: "Claro", dark: "Oscuro", rose: "Rosa pastel", cream: "Crema" }; window.T.es.ui.theme = "Tema";
+window.T.en.ui.themeNames = { light: "Light", dark: "Dark", rose: "Pastel pink", cream: "Cream" }; window.T.en.ui.theme = "Theme";
+window.T.fr.ui.themeNames = { light: "Clair", dark: "Sombre", rose: "Rose pastel", cream: "Crème" }; window.T.fr.ui.theme = "Thème";
+window.T.de.ui.themeNames = { light: "Hell", dark: "Dunkel", rose: "Pastellrosa", cream: "Creme" }; window.T.de.ui.theme = "Design";

@@ -72,6 +72,7 @@
     // tooltips de la barra colapsada
     $$(".rail-link").forEach(function (a) { var l = a.querySelector(".rl-label"); if (l) a.setAttribute("data-tip", l.textContent); });
     $("#langSwitch").setAttribute("aria-label", tr.ui.lang);
+    labelThemes();
     $$("#langSwitch button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === state.lang)); });
     $("#year").textContent = new Date().getFullYear();
   }
@@ -385,12 +386,24 @@
   function openDrawer() { $("#app").classList.add("drawer"); $("#scrim").hidden = false; }
   function closeDrawer() { $("#app").classList.remove("drawer"); $("#scrim").hidden = true; }
 
-  function applyTheme(mode) { document.documentElement.setAttribute("data-theme", mode === "light" || mode === "dark" ? mode : "auto"); }
-  function currentIsDark() {
+  var THEMES = ["light", "dark", "rose", "cream"];
+  function activeTheme() {
     var m = document.documentElement.getAttribute("data-theme");
-    if (m === "dark") return true;
-    if (m === "light") return false;
-    return matchMedia("(prefers-color-scheme: dark)").matches;
+    if (THEMES.indexOf(m) > -1) return m;
+    return matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  function syncThemes() {
+    var cur = activeTheme();
+    $$("#themeSwitch .sw").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.themeOpt === cur)); });
+  }
+  function labelThemes() {
+    var names = t().ui.themeNames || {};
+    $("#themeSwitch").setAttribute("aria-label", t().ui.theme);
+    $$("#themeSwitch .sw").forEach(function (b) { var n = names[b.dataset.themeOpt] || b.dataset.themeOpt; b.setAttribute("aria-label", n); b.setAttribute("title", n); });
+  }
+  function applyTheme(mode) {
+    document.documentElement.setAttribute("data-theme", THEMES.indexOf(mode) > -1 ? mode : "auto");
+    syncThemes();
   }
 
   /* ── política de privacidad ─────────────────────────────── */
@@ -467,12 +480,13 @@
   function init() {
     state.lang = pickLang();
     if (window.__SHARED__) $$("[data-cv]").forEach(function (n) { n.remove(); });   // versión compartida: sin descarga de CV
-    applyTheme(store(STORE.theme));
     renderAll();
+    applyTheme(store(STORE.theme));
     initCarousel(); initPhotos(); initBackground(); initCopy(); initToTop();
 
     $$("#langSwitch button").forEach(function (b) { b.addEventListener("click", function () { setLang(b.dataset.lang); }); });
-    $("#themeBtn").addEventListener("click", function () { var n = currentIsDark() ? "light" : "dark"; applyTheme(n); store(STORE.theme, n); });
+    $$("#themeSwitch .sw").forEach(function (b) { b.addEventListener("click", function () { applyTheme(b.dataset.themeOpt); store(STORE.theme, b.dataset.themeOpt); }); });
+    matchMedia("(prefers-color-scheme: dark)").addEventListener("change", syncThemes);
     $("#railToggle").addEventListener("click", function () { setRail(!$("#app").classList.contains("expanded")); });
     $("#railOpen").addEventListener("click", openDrawer);
     $("#scrim").addEventListener("click", closeDrawer);
