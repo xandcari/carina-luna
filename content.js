@@ -97,7 +97,7 @@ window.T = {
       facts: [
         ["Foco", "GRC y riesgo tecnológico"],
         ["Base", "Gral. San Martín, Buenos Aires"],
-        ["Idiomas", "Español nativo · Inglés B1"],
+        ["Idiomas", "Español nativo · Inglés de B2 a C1 (en proceso)"],
         ["Marcos", "ISO 27001 · COBIT · ITIL · BCRA"]
       ]
     },
@@ -188,7 +188,7 @@ window.T = {
         pymes: "Tecnicatura en Administración de Pymes",
         utn: "Diseño Gráfico y Multimedial"
       },
-      langs: [["Español", "Nativo"], ["Inglés", "B1 · en progreso"]]
+      langs: [["Español", "Nativo"], ["Inglés", "De B2 a C1 · en proceso"]]
     },
     contact: {
       title: "Hablemos",
@@ -228,7 +228,7 @@ window.T = {
       facts: [
         ["Focus", "GRC and technology risk"],
         ["Based in", "Gral. San Martín, Buenos Aires"],
-        ["Languages", "Spanish (native) · English B1"],
+        ["Languages", "Spanish (native) · English B2 to C1 (in progress)"],
         ["Frameworks", "ISO 27001 · COBIT · ITIL · BCRA"]
       ]
     },
@@ -319,7 +319,7 @@ window.T = {
         pymes: "Technical degree in SME Administration",
         utn: "Graphic and Multimedia Design"
       },
-      langs: [["Spanish", "Native"], ["English", "B1 · in progress"]]
+      langs: [["Spanish", "Native"], ["English", "B2 to C1 · in progress"]]
     },
     contact: {
       title: "Let's talk",
@@ -359,7 +359,7 @@ window.T = {
       facts: [
         ["Focus", "GRC et risque technologique"],
         ["Basée à", "Gral. San Martín, Buenos Aires"],
-        ["Langues", "Espagnol (langue maternelle) · Anglais B1"],
+        ["Langues", "Espagnol (langue maternelle) · Anglais de B2 à C1 (en cours)"],
         ["Référentiels", "ISO 27001 · COBIT · ITIL · BCRA"]
       ]
     },
@@ -450,7 +450,7 @@ window.T = {
         pymes: "Diplôme technique en administration des PME",
         utn: "Design graphique et multimédia"
       },
-      langs: [["Espagnol", "Langue maternelle"], ["Anglais", "B1 · en progression"]]
+      langs: [["Espagnol", "Langue maternelle"], ["Anglais", "De B2 à C1 · en cours"]]
     },
     contact: {
       title: "Parlons-en",
@@ -490,7 +490,7 @@ window.T = {
       facts: [
         ["Fokus", "GRC und Technologierisiko"],
         ["Standort", "Gral. San Martín, Buenos Aires"],
-        ["Sprachen", "Spanisch (Muttersprache) · Englisch B1"],
+        ["Sprachen", "Spanisch (Muttersprache) · Englisch B2 bis C1 (in Arbeit)"],
         ["Standards", "ISO 27001 · COBIT · ITIL · BCRA"]
       ]
     },
@@ -581,7 +581,7 @@ window.T = {
         pymes: "Technische Ausbildung in KMU-Verwaltung",
         utn: "Grafik- und Multimediadesign"
       },
-      langs: [["Spanisch", "Muttersprache"], ["Englisch", "B1 · in Arbeit"]]
+      langs: [["Spanisch", "Muttersprache"], ["Englisch", "B2 bis C1 · in Arbeit"]]
     },
     contact: {
       title: "Sprechen wir",
