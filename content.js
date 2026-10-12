@@ -105,7 +105,7 @@ window.T = {
       title: "Competencias clave",
       groups: [
         { t: "GRC, riesgos y controles", i: ["Auditoría interna y operativa", "Análisis de riesgos y desvíos", "Control interno", "Documentación de hallazgos", "Trazabilidad y seguimiento de mejoras"] },
-        { t: "Seguridad y accesos", i: ["SAP GRC", "Usuarios, roles y accesos", "Segregación de Deberes (SoD)", "Portal privado con magic link", "Tokens con vencimiento"] },
+        { t: "Seguridad y accesos", i: ["SAP GRC", "Parametrización de usuarios y de seguridad en SAP", "Usuarios, roles y accesos", "Segregación de Deberes (SoD)", "Google Workspace", "FortiEMS y Trend Micro", "Gestión de vulnerabilidades", "Atención a usuarios", "Active Directory, NTFS y GPO (conocimientos)", "Portal privado con magic link", "Tokens con vencimiento"] },
         { t: "Procesos y gobernanza", i: ["Relevamiento y mejora de procesos", "Procedimientos y manuales", "Circuitos y puntos de control", "Indicadores de gestión"] },
         { t: "Datos y reporting", i: ["Excel avanzado", "Power BI", "Tableros e indicadores", "Automatización de reportes", "GA4", "Python/pandas y SQL (en formación)"] },
         { t: "Producto y desarrollo", i: ["React · JavaScript/TypeScript", "Node.js · PostgreSQL · FastAPI", "Git", "Diseño UX/UI en Figma"] },
@@ -130,10 +130,11 @@ window.T = {
           "Automaticé la consolidación de hallazgos e indicadores de un equipo de 10 personas y preparé tableros para monitorear acciones correctivas."
         ] },
         marfrig: { role: "Analista de Auditoría y Seguridad SAP", bullets: [
-          "Analicé órdenes de compra, pagos, transferencias y conciliaciones para detectar desvíos respecto del gasto autorizado y priorizar controles.",
-          "Revisé accesos, roles y Segregación de Deberes (SoD) de usuarios SAP mediante SAP GRC, identificando riesgos y excepciones de control.",
-          "Elaboré informes sobre contratos marco, gastos por proveedor y proyectos de ingeniería; detecté oportunidades de recupero con controles preventivos.",
-          "Relevé y optimicé procedimientos operativos para mejorar la trazabilidad y reducir tareas redundantes."
+          "Parametrización de usuarios y de seguridad en SAP; revisión de accesos, roles y Segregación de Deberes (SoD) mediante SAP GRC, identificando riesgos y excepciones de control.",
+          "Administración de Google Workspace y de las consolas de FortiEMS y de Trend Micro; gestión de vulnerabilidades y atención diaria a usuarios.",
+          "Compliance y auditoría de sistemas: análisis de órdenes de compra, pagos, transferencias y conciliaciones para detectar desvíos respecto del gasto autorizado y priorizar controles.",
+          "Informes sobre contratos marco, gastos por proveedor y proyectos de ingeniería; oportunidades de recupero mediante controles preventivos.",
+          "Relevamiento y optimización de procedimientos operativos para mejorar la trazabilidad y reducir tareas redundantes."
         ] },
         vae: { role: "Analista Contable", bullets: ["Realicé conciliaciones y controles de pagos y facturación, y elaboré reportes para cierres y auditorías."] },
         mkind: { role: "Titular / Business Owner", bullets: ["Gestioné métricas de ventas, inventarios y reportes para analizar procesos, resultados y márgenes."] },
@@ -236,7 +237,7 @@ window.T = {
       title: "Key skills",
       groups: [
         { t: "GRC, risk and controls", i: ["Internal and operational audit", "Risk and deviation analysis", "Internal control", "Findings documentation", "Traceability and follow-up of improvements"] },
-        { t: "Security and access", i: ["SAP GRC", "Users, roles and access reviews", "Segregation of Duties (SoD)", "Private portal with magic links", "Expiring tokens"] },
+        { t: "Security and access", i: ["SAP GRC", "User and security parameterisation in SAP", "Users, roles and access reviews", "Segregation of Duties (SoD)", "Google Workspace", "FortiEMS and Trend Micro", "Vulnerability management", "User support", "Active Directory, NTFS and GPO (knowledge)", "Private portal with magic links", "Expiring tokens"] },
         { t: "Process and governance", i: ["Process mapping and improvement", "Procedures and manuals", "Workflows and control points", "Management indicators"] },
         { t: "Data and reporting", i: ["Advanced Excel", "Power BI", "Dashboards and KPIs", "Report automation", "GA4", "Python/pandas and SQL (learning)"] },
         { t: "Product and development", i: ["React · JavaScript/TypeScript", "Node.js · PostgreSQL · FastAPI", "Git", "UX/UI design in Figma"] },
@@ -261,10 +262,11 @@ window.T = {
           "Automated the consolidation of findings and KPIs for a team of 10 and prepared dashboards to monitor corrective actions."
         ] },
         marfrig: { role: "Audit and SAP Security Analyst", bullets: [
-          "Analysed purchase orders, payments, transfers and reconciliations to detect deviations from authorised spend and prioritise controls.",
-          "Reviewed SAP user access, roles and Segregation of Duties (SoD) with SAP GRC, identifying risks and control exceptions.",
-          "Produced reports on framework contracts, spend by supplier and engineering projects; found recovery opportunities through preventive controls.",
-          "Mapped and optimised operating procedures to improve traceability and cut redundant tasks."
+          "User and security parameterisation in SAP; review of access, roles and Segregation of Duties (SoD) with SAP GRC, identifying risks and control exceptions.",
+          "Administration of Google Workspace and of the FortiEMS and Trend Micro consoles; vulnerability management and daily user support.",
+          "Compliance and systems audit: analysis of purchase orders, payments, transfers and reconciliations to detect deviations from authorised spend and prioritise controls.",
+          "Reports on framework contracts, spend by supplier and engineering projects; recovery opportunities through preventive controls.",
+          "Mapping and optimisation of operating procedures to improve traceability and cut redundant tasks."
         ] },
         vae: { role: "Accounting Analyst", bullets: ["Performed payment and invoicing reconciliations and controls, and prepared reports for closings and audits."] },
         mkind: { role: "Owner / Business Owner", bullets: ["Managed sales, inventory and reporting metrics to analyse processes, results and margins."] },
@@ -367,7 +369,7 @@ window.T = {
       title: "Compétences clés",
       groups: [
         { t: "GRC, risques et contrôles", i: ["Audit interne et opérationnel", "Analyse des risques et des écarts", "Contrôle interne", "Documentation des constats", "Traçabilité et suivi des améliorations"] },
-        { t: "Sécurité et accès", i: ["SAP GRC", "Revue des utilisateurs, rôles et accès", "Séparation des tâches (SoD)", "Portail privé par lien magique", "Jetons à durée limitée"] },
+        { t: "Sécurité et accès", i: ["SAP GRC", "Paramétrage des utilisateurs et de la sécurité dans SAP", "Revue des utilisateurs, rôles et accès", "Séparation des tâches (SoD)", "Google Workspace", "FortiEMS et Trend Micro", "Gestion des vulnérabilités", "Assistance aux utilisateurs", "Active Directory, NTFS et GPO (connaissances)", "Portail privé par lien magique", "Jetons à durée limitée"] },
         { t: "Processus et gouvernance", i: ["Cartographie et amélioration des processus", "Procédures et manuels", "Circuits et points de contrôle", "Indicateurs de gestion"] },
         { t: "Données et reporting", i: ["Excel avancé", "Power BI", "Tableaux de bord et indicateurs", "Automatisation des rapports", "GA4", "Python/pandas et SQL (en formation)"] },
         { t: "Produit et développement", i: ["React · JavaScript/TypeScript", "Node.js · PostgreSQL · FastAPI", "Git", "Design UX/UI sur Figma"] },
@@ -392,10 +394,11 @@ window.T = {
           "J'ai automatisé la consolidation des constats et des indicateurs d'une équipe de 10 personnes et préparé des tableaux de bord pour suivre les actions correctives."
         ] },
         marfrig: { role: "Analyste audit et sécurité SAP", bullets: [
-          "J'ai analysé bons de commande, paiements, virements et rapprochements pour détecter les écarts par rapport aux dépenses autorisées et prioriser les contrôles.",
-          "J'ai revu les accès, les rôles et la séparation des tâches (SoD) des utilisateurs SAP via SAP GRC, en identifiant risques et exceptions de contrôle.",
-          "J'ai rédigé des rapports sur les contrats-cadres, les dépenses par fournisseur et les projets d'ingénierie ; j'ai repéré des opportunités de récupération grâce à des contrôles préventifs.",
-          "J'ai cartographié et optimisé les procédures opérationnelles pour améliorer la traçabilité et réduire les tâches redondantes."
+          "Paramétrage des utilisateurs et de la sécurité dans SAP ; revue des accès, des rôles et de la séparation des tâches (SoD) via SAP GRC, avec identification des risques et des exceptions de contrôle.",
+          "Administration de Google Workspace et des consoles FortiEMS et Trend Micro ; gestion des vulnérabilités et assistance quotidienne aux utilisateurs.",
+          "Conformité et audit des systèmes : analyse des bons de commande, paiements, virements et rapprochements pour détecter les écarts par rapport aux dépenses autorisées et prioriser les contrôles.",
+          "Rapports sur les contrats-cadres, les dépenses par fournisseur et les projets d'ingénierie ; opportunités de récupération grâce à des contrôles préventifs.",
+          "Cartographie et optimisation des procédures opérationnelles pour améliorer la traçabilité et réduire les tâches redondantes."
         ] },
         vae: { role: "Analyste comptable", bullets: ["Rapprochements et contrôles des paiements et de la facturation ; rapports pour les clôtures et les audits."] },
         mkind: { role: "Dirigeante / propriétaire", bullets: ["Gestion des indicateurs de ventes, des stocks et des rapports pour analyser les processus, les résultats et les marges."] },
@@ -498,7 +501,7 @@ window.T = {
       title: "Kernkompetenzen",
       groups: [
         { t: "GRC, Risiken und Kontrollen", i: ["Interne und operative Revision", "Risiko- und Abweichungsanalyse", "Internes Kontrollsystem", "Dokumentation von Feststellungen", "Nachvollziehbarkeit und Maßnahmenverfolgung"] },
-        { t: "Sicherheit und Zugriffe", i: ["SAP GRC", "Prüfung von Benutzern, Rollen und Zugriffen", "Funktionstrennung (SoD)", "Privates Portal mit Magic Link", "Token mit Ablaufdatum"] },
+        { t: "Sicherheit und Zugriffe", i: ["SAP GRC", "Parametrierung von Benutzern und Sicherheit in SAP", "Prüfung von Benutzern, Rollen und Zugriffen", "Funktionstrennung (SoD)", "Google Workspace", "FortiEMS und Trend Micro", "Schwachstellenmanagement", "Benutzerbetreuung", "Active Directory, NTFS und GPO (Kenntnisse)", "Privates Portal mit Magic Link", "Token mit Ablaufdatum"] },
         { t: "Prozesse und Governance", i: ["Prozessaufnahme und -verbesserung", "Verfahren und Handbücher", "Arbeitsabläufe und Kontrollpunkte", "Steuerungskennzahlen"] },
         { t: "Daten und Reporting", i: ["Excel (fortgeschritten)", "Power BI", "Dashboards und Kennzahlen", "Automatisierung von Berichten", "GA4", "Python/pandas und SQL (in Weiterbildung)"] },
         { t: "Produkt und Entwicklung", i: ["React · JavaScript/TypeScript", "Node.js · PostgreSQL · FastAPI", "Git", "UX/UI-Design in Figma"] },
@@ -523,10 +526,11 @@ window.T = {
           "Ich habe die Zusammenführung von Feststellungen und Kennzahlen eines zehnköpfigen Teams automatisiert und Dashboards zur Überwachung von Korrekturmaßnahmen erstellt."
         ] },
         marfrig: { role: "Analystin für Revision und SAP-Sicherheit", bullets: [
-          "Ich habe Bestellungen, Zahlungen, Überweisungen und Abstimmungen analysiert, um Abweichungen von genehmigten Ausgaben zu erkennen und Kontrollen zu priorisieren.",
-          "Ich habe Zugriffe, Rollen und Funktionstrennung (SoD) von SAP-Benutzern mit SAP GRC geprüft und dabei Risiken und Kontrollausnahmen identifiziert.",
-          "Ich habe Berichte zu Rahmenverträgen, Ausgaben je Lieferant und Ingenieurprojekten erstellt und durch präventive Kontrollen Rückgewinnungspotenziale aufgedeckt.",
-          "Ich habe operative Abläufe aufgenommen und optimiert, um die Nachvollziehbarkeit zu verbessern und redundante Aufgaben zu reduzieren."
+          "Parametrierung von Benutzern und Sicherheit in SAP; Prüfung von Zugriffen, Rollen und Funktionstrennung (SoD) mit SAP GRC, Identifizierung von Risiken und Kontrollausnahmen.",
+          "Administration von Google Workspace sowie der FortiEMS- und Trend-Micro-Konsolen; Schwachstellenmanagement und tägliche Benutzerbetreuung.",
+          "Compliance und Systemprüfung: Analyse von Bestellungen, Zahlungen, Überweisungen und Abstimmungen, um Abweichungen von genehmigten Ausgaben zu erkennen und Kontrollen zu priorisieren.",
+          "Berichte zu Rahmenverträgen, Ausgaben je Lieferant und Ingenieurprojekten; Rückgewinnungspotenziale durch präventive Kontrollen.",
+          "Aufnahme und Optimierung operativer Abläufe, um die Nachvollziehbarkeit zu verbessern und redundante Aufgaben zu reduzieren."
         ] },
         vae: { role: "Buchhaltungsanalystin", bullets: ["Abstimmungen und Kontrollen von Zahlungen und Rechnungen sowie Berichte für Abschlüsse und Prüfungen."] },
         mkind: { role: "Inhaberin / Business Owner", bullets: ["Steuerung von Verkaufs-, Bestands- und Berichtskennzahlen zur Analyse von Prozessen, Ergebnissen und Margen."] },
