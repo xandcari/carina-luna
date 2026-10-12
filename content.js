@@ -24,8 +24,8 @@ window.DATA = {
 
   // fechas: [año, mes]; end: null = actualidad
   experience: [
-    { id: "fundacion", org: "Fundación Compromiso", start: [2026, 4], end: null },
-    { id: "talentoit", org: "Potrero Digital / Fundación Compromiso", start: [2026, 5], end: [2026, 8] },
+    { id: "fundacion", org: "Fundación Compromiso", start: [2026, 9], end: null },
+    { id: "talentoit", org: "Potrero Digital / Fundación Compromiso", start: [2026, 4], end: [2026, 9] },
     { id: "gastrobsas", org: "Gastrobsas S.A.", start: [2026, 4], end: [2026, 7] },
     { id: "marfrig", org: "Marfrig Global Foods", start: [2023, 11], end: [2025, 10] },
     { id: "vae", org: "Industrias VAE", start: [2023, 3], end: [2023, 10] },
