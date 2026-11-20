@@ -10,7 +10,7 @@ window.T.es.privacy = {
   updated: "Última actualización: 9 de octubre de 2026",
   intro: "En una línea: este sitio no recopila datos personales de quienes lo visitan. No usa cookies, no mide visitas, no muestra publicidad, no tiene formularios ni registro y no le pide nada a servidores de terceros, salvo el aviso de copias no autorizadas (punto 13).",
   sections: [
-    { h: "1. Quién es responsable", p: ["Carina Alejandra Luna, Gral. San Martín, provincia de Buenos Aires, Argentina. Contacto para cualquier consulta o pedido sobre esta política: caricariluna@gmail.com."] },
+    { h: "1. Quién es responsable", p: ["Carina Alejandra Luna, Buenos Aires, Argentina. Contacto para cualquier consulta o pedido sobre esta política: caricariluna@gmail.com."] },
     { h: "2. Lo que este sitio no hace", p: ["Para que no queden dudas, este sitio no usa:"], ul: [
       "Cookies de ningún tipo (ni propias ni de terceros).",
       "Analítica, estadísticas de visitas, mapas de calor ni grabaciones de sesión.",
@@ -47,7 +47,7 @@ window.T.en.privacy = {
   updated: "Last updated: 9 October 2026",
   intro: "In one line: this site does not collect personal data from its visitors. It uses no cookies, does not measure visits, shows no advertising, has no forms or sign-up, and does not request anything from third-party servers, except for the unauthorised-copy alert (section 13).",
   sections: [
-    { h: "1. Who is responsible", p: ["Carina Alejandra Luna, Gral. San Martín, Buenos Aires province, Argentina. For any question or request about this policy: caricariluna@gmail.com."] },
+    { h: "1. Who is responsible", p: ["Carina Alejandra Luna, Buenos Aires, Argentina. For any question or request about this policy: caricariluna@gmail.com."] },
     { h: "2. What this site does not do", p: ["To leave no doubt, this site does not use:"], ul: [
       "Cookies of any kind (neither first-party nor third-party).",
       "Analytics, visit statistics, heat maps or session recordings.",
@@ -84,7 +84,7 @@ window.T.fr.privacy = {
   updated: "Dernière mise à jour : 9 octobre 2026",
   intro: "En une ligne : ce site ne collecte aucune donnée personnelle de ses visiteurs. Il n'utilise pas de cookies, ne mesure pas les visites, n'affiche pas de publicité, n'a ni formulaire ni inscription et ne sollicite aucun serveur tiers, sauf l'alerte de copie non autorisée (point 13).",
   sections: [
-    { h: "1. Responsable", p: ["Carina Alejandra Luna, Gral. San Martín, province de Buenos Aires, Argentine. Pour toute question ou demande concernant cette politique : caricariluna@gmail.com."] },
+    { h: "1. Responsable", p: ["Carina Alejandra Luna, Buenos Aires, Argentine. Pour toute question ou demande concernant cette politique : caricariluna@gmail.com."] },
     { h: "2. Ce que ce site ne fait pas", p: ["Pour lever tout doute, ce site n'utilise pas :"], ul: [
       "De cookies, quels qu'ils soient (ni propres ni tiers).",
       "D'outils d'analyse, de statistiques de visites, de cartes de chaleur ni d'enregistrements de sessions.",
@@ -121,7 +121,7 @@ window.T.de.privacy = {
   updated: "Zuletzt aktualisiert: 9. Oktober 2026",
   intro: "In einem Satz: Diese Website erhebt keine personenbezogenen Daten ihrer Besucher. Sie verwendet keine Cookies, misst keine Besuche, zeigt keine Werbung, hat weder Formulare noch Registrierung und fordert nichts von Servern Dritter an, außer der Warnung vor nicht autorisierten Kopien (Punkt 13).",
   sections: [
-    { h: "1. Verantwortliche", p: ["Carina Alejandra Luna, Gral. San Martín, Provinz Buenos Aires, Argentinien. Für Fragen oder Anliegen zu dieser Erklärung: caricariluna@gmail.com."] },
+    { h: "1. Verantwortliche", p: ["Carina Alejandra Luna, Buenos Aires, Argentinien. Für Fragen oder Anliegen zu dieser Erklärung: caricariluna@gmail.com."] },
     { h: "2. Was diese Website nicht tut", p: ["Damit keine Zweifel bleiben, verwendet diese Website nicht:"], ul: [
       "Cookies jeglicher Art (weder eigene noch von Dritten).",
       "Analyse, Besucherstatistiken, Heatmaps oder Sitzungsaufzeichnungen.",

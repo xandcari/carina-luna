@@ -12,7 +12,7 @@ window.DATA = {
   linkedin: "https://www.linkedin.com/in/carina-alejandra-luna",
   github: "https://github.com/xandcari",
   cv: "assets/CV_Carina_Luna_GRC.pdf",
-  location: "Gral. San Martín, Buenos Aires · Argentina",
+  location: "Buenos Aires · Argentina",
 
   stats: [
     { id: "years", n: 25, plus: true },
@@ -96,7 +96,7 @@ window.T = {
       p2: "Lo combino con documentación de procesos, seguimiento de indicadores y automatización de reportes. Hoy trabajo en procesos y desarrollos digitales para empleabilidad en Fundación Compromiso, profundizo mi formación en ciberseguridad y SOC, y apunto a crecer en Gobierno, Riesgo y Cumplimiento (GRC).",
       facts: [
         ["Foco", "GRC y riesgo tecnológico"],
-        ["Base", "Gral. San Martín, Buenos Aires"],
+        ["Base", "Buenos Aires, Argentina"],
         ["Idiomas", "Español nativo · Inglés de B2 a C1 (en proceso)"],
         ["Marcos", "ISO 27001 · COBIT · ITIL · BCRA"]
       ]
@@ -228,7 +228,7 @@ window.T = {
       p2: "I combine this with process documentation, KPI tracking and report automation. Today I work on processes and digital developments for employability at Fundación Compromiso, I am deepening my training in cybersecurity and SOC, and I am aiming to grow in Governance, Risk and Compliance (GRC).",
       facts: [
         ["Focus", "GRC and technology risk"],
-        ["Based in", "Gral. San Martín, Buenos Aires"],
+        ["Based in", "Buenos Aires, Argentina"],
         ["Languages", "Spanish (native) · English B2 to C1 (in progress)"],
         ["Frameworks", "ISO 27001 · COBIT · ITIL · BCRA"]
       ]
@@ -360,7 +360,7 @@ window.T = {
       p2: "J'y associe la documentation des processus, le suivi des indicateurs et l'automatisation des rapports. Aujourd'hui, je travaille sur des processus et des développements numériques pour l'employabilité à la Fundación Compromiso, je renforce ma formation en cybersécurité et en SOC, et je vise une évolution en gouvernance, risques et conformité (GRC).",
       facts: [
         ["Focus", "GRC et risque technologique"],
-        ["Basée à", "Gral. San Martín, Buenos Aires"],
+        ["Basée à", "Buenos Aires, Argentine"],
         ["Langues", "Espagnol (langue maternelle) · Anglais de B2 à C1 (en cours)"],
         ["Référentiels", "ISO 27001 · COBIT · ITIL · BCRA"]
       ]
@@ -492,7 +492,7 @@ window.T = {
       p2: "Dazu kommen Prozessdokumentation, Kennzahlenverfolgung und die Automatisierung von Berichten. Heute arbeite ich bei der Fundación Compromiso an Prozessen und digitalen Entwicklungen für Beschäftigungsfähigkeit, vertiefe meine Weiterbildung in Cybersicherheit und SOC und möchte im Bereich Governance, Risk und Compliance (GRC) wachsen.",
       facts: [
         ["Fokus", "GRC und Technologierisiko"],
-        ["Standort", "Gral. San Martín, Buenos Aires"],
+        ["Standort", "Buenos Aires, Argentinien"],
         ["Sprachen", "Spanisch (Muttersprache) · Englisch B2 bis C1 (in Arbeit)"],
         ["Standards", "ISO 27001 · COBIT · ITIL · BCRA"]
       ]
